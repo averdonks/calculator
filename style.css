@@ -1,0 +1,28 @@
+html {
+    margin-top: 320px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.8em;
+    margin-bottom: 48px;
+}
+
+.container {
+    display: flex;
+    margin: 4px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+button {
+    width: 64px;
+    height: 64px;
+    font-size: 1.2em;
+}
