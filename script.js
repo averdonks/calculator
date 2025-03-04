@@ -1,3 +1,6 @@
+const nums = document.querySelectorAll(".num");
+const display = document.querySelector("#display");
+
 let firstNum = 0;
 let secondNum = 0;
 let operator = 0;
@@ -31,6 +34,13 @@ function operate(oper, num1, num2) {
     }
 }
 
+nums.forEach((num) => {
+    num.addEventListener("click", () => {
+        console.log("clicked");
+        display.textContent = display.textContent.concat(num.textContent);
+    });
+});
+
 // Testing functionality
 
 firstNum = 10;
@@ -47,3 +57,4 @@ console.log(operate(operator, firstNum, secondNum));
 
 operator = "/";
 console.log(operate(operator, firstNum, secondNum));
+
