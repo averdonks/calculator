@@ -1,8 +1,6 @@
 # Project: Calculator
 
-## Description
-
-In this project, I created an browser calculator using HTML, CSS, and JavaScript.
+In this project, I created a browser calculator using HTML, CSS, and JavaScript.
 - Live preview: https://averdonks.github.io/calculator/
 
 ## Features
