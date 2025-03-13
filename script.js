@@ -7,14 +7,12 @@ const clear = document.querySelector("#clear");
 let firstNum = "0";
 let secondNum = "0";
 let operator = "";
-// store display contents in a variable
 let displayText = display.textContent;
 // save previous button press in "state" variable
 let state = "";
 let operCount = 0;
 let hasOperated = false;
 let secondToggle = false;
-// let refresh = false;
 
 function add(num1, num2) {
     return num1 + num2;
@@ -97,11 +95,9 @@ opers.forEach((oper) => {
 
         // perform operation if two numbers have been inputed
         if ((operCount % 2 === 0 || hasOperated) && (state !== "oper" && state !== "equal")) {
-            console.log("one")
             // stop division by 0
             if (firstNum >= 0 && secondNum == "0") {
                 reset();
-                console.log("don't")
                 displayText = "I can't let you do that.";
                 display.textContent = displayText;
                 return;
@@ -112,9 +108,6 @@ opers.forEach((oper) => {
                 result = result.toExponential(2);
             }
             firstNum = result;
-            console.log(firstNum);
-            console.log(secondNum);
-            console.log("operating");
             displayText = firstNum;
             display.textContent = displayText;
             hasOperated = true;
