@@ -134,7 +134,7 @@ equal.addEventListener("click", () => {
     } 
     
     // stop display from disappearing when pressing a num followed by =
-    if (secondNum == "0" && state != "oper") {
+    if (secondNum == "0" && state != "oper" && secondToggle === false) {
         return;
     }
 
