@@ -96,7 +96,8 @@ opers.forEach((oper) => {
         // perform operation if two numbers have been inputed
         if ((operCount % 2 === 0 || hasOperated) && (state !== "oper" && state !== "equal")) {
             // stop division by 0
-            if (firstNum >= 0 && secondNum == "0") {
+            if (firstNum >= 0 && secondNum == "0" && operator == "/")
+            {
                 reset();
                 displayText = "I can't let you do that.";
                 display.textContent = displayText;
