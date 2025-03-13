@@ -21,7 +21,7 @@ In this project, I created an browser calculator using HTML, CSS, and JavaScript
 
 ![Preview of the browser calculator](images/calculator_preview.png)
 
-## Technologies used
+## Technologies Used
 
 - HTML
 - CSS
